@@ -1,16 +1,20 @@
 import { Header } from "./components/header";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import { Home } from "./pages/home/home";
+import { Diario } from "./pages/diario/diario";
 
 export function App() {
 
   return (
-    <Header />
+    <div>
+      <Header />
 
-    <Router>
-      <Switch>
-        <Route path="/" exact Component={Home}></Route>
-        <Route path="/" Component={Diario}></Route>
-      </Switch>
-    </Router>
+        
+      <Routes>
+          <Route path="/" exact Component={Home}></Route>
+          <Route path="/diario" Component={Diario}></Route>
+      </Routes>
+      
+    </div>
   )
 }

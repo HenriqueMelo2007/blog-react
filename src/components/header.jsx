@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function Header() {
   return (
     <header>
@@ -5,8 +7,12 @@ export function Header() {
 
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Diário online</li>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/diario'>Diário Online</Link>
+          </li>
         </ul>
       </nav>
 
