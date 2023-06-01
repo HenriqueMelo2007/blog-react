@@ -1,6 +1,16 @@
 export function App() {
 
   return (
-    <div>Hello world</div>
+    <header>
+      <h1>HM Blog</h1>
+
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Diário online</li>
+        </ul>
+      </nav>
+
+    </header>
   )
 }
