@@ -16,10 +16,37 @@
 body {
   background-color: var(--color-black);
   color: var(--color-text);
+  font-family: var(--font-roboto);
 }
 
 header {
   height: 170px;
   width: 100vw;
+  padding: 0 40px;
   background-color: var(--color-purple);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: var(--font-handlee);
+}
+
+ul {
+  display: flex;
+}
+
+ul > :first-child {
+  margin-right: 40px;
+}
+
+li {
+  font-size: 25px;
+  list-style: none;
+}
+
+li:hover {
+  cursor: pointer;
 }
