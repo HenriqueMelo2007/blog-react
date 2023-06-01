@@ -8,8 +8,7 @@ export function App() {
   return (
     <div>
       <Header />
-
-        
+  
       <Routes>
           <Route path="/" exact Component={Home}></Route>
           <Route path="/diario" Component={Diario}></Route>

@@ -8,10 +8,10 @@ export function Header() {
       <nav>
         <ul>
           <li>
-            <Link to='/'>Home</Link>
+            <Link className='linkPage' to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/diario'>Diário Online</Link>
+            <Link className='linkPage' to='/diario'>Diário Online</Link>
           </li>
         </ul>
       </nav>

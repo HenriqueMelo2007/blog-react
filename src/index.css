@@ -43,10 +43,15 @@ ul > :first-child {
 }
 
 li {
-  font-size: 25px;
+  font-size: 35px;
   list-style: none;
 }
 
 li:hover {
   cursor: pointer;
+}
+
+.linkPage {
+  text-decoration: none;
+  color: var(--color-text);
 }
