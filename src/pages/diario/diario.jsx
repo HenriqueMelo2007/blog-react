@@ -1,6 +1,11 @@
+import { useState } from 'react'
+import { Anotacao } from '../../components/anotacao/anotacao'
 import './diariostyle.css'
 
 export function Diario () {
+
+  const [anotacoes, setAnotacoes] = useState([{tittle: 'oi', text: 'esse é meu textooo'}])
+
   return (
     <div className='containerDiario'>
 
@@ -14,7 +19,7 @@ export function Diario () {
       </div>
 
       <div className='divConteudo'>
-        <p>teste</p>
+        {anotacoes.map( item => <Anotacao tittle={item.tittle} text={item.text}/>)}
       </div>
 
     </div>

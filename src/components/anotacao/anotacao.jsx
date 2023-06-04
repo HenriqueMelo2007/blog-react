@@ -1,7 +1,11 @@
 import './anotacaostyle.css'
 
-export function Anotacao ({ tittle }) {
+export function Anotacao ({ tittle, text }) {
   return (
-    <p>{tittle}</p>
+    <div>
+      <p>{tittle}</p>
+      <p>{text}</p>
+    </div>
+
   )
 }
