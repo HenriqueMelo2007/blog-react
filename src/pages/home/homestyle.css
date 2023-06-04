@@ -1,0 +1,24 @@
+.shadow {
+  position: fixed;
+  width: 0;
+  height: 0; 
+  background-color: var(--color-purple);
+  border-radius: 50%;
+  box-shadow: 0 0 130px 70px var(--color-purple);
+  z-index: -1;
+  margin: 50px 0 0 50px;
+}
+
+.containerHome {
+  margin: 100px 0 0 100px;
+}
+
+.tittleHome {
+  font-size: 70px;
+  font-family: var(--font-roboto);
+}
+
+.textHome {
+  font-family: var(--font-handlee);
+  font-size: 20px;
+}
