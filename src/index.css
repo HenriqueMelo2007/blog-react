@@ -17,6 +17,7 @@ body {
   background-color: var(--color-black);
   color: var(--color-text);
   font-family: var(--font-roboto);
+  overflow-x: hidden;
 }
 
 header {

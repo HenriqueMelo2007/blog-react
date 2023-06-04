@@ -1,0 +1,46 @@
+.boxAnotacao {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 40px;
+  border: 2px solid var(--color-purple);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.textAnotacao, .inputAnotacao {
+  color: var(--color-text);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.inputAnotacao {
+  font-family: var(--font-handlee);
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.textAnotacao {
+  resize: none;
+  line-height: 26px;
+  font-family: var(--font-roboto);
+  font-size: 18px;
+  padding-right: 2px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px; 
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor de fundo da faixa de rolagem */
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: rgb(94, 14, 94); /* Cor do indicador de rolagem */
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: rgb(70, 11, 70); /* Cor do indicador de rolagem ao passar o mouse */
+}

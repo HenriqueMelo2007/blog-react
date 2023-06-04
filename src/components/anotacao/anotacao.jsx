@@ -2,9 +2,11 @@ import './anotacaostyle.css'
 
 export function Anotacao ({ tittle, text }) {
   return (
-    <div>
-      <p>{tittle}</p>
-      <p>{text}</p>
+    <div className='boxAnotacao'>
+      
+      <input className='inputAnotacao' type="text" readOnly value={tittle}/>
+      <textarea className='textAnotacao' readOnly value={text} cols="10" rows="12"></textarea>
+
     </div>
 
   )
