@@ -1,3 +1,7 @@
+.containerDiario {
+  padding: 30px 50px 30px 50px;
+}
+
 .bookmarkBtn {
   width: 300px;
   height: 80px;
@@ -13,10 +17,10 @@
 }
 
 .IconContainer {
-  width: 60px;
+  width: 80px;
   height: 60px;
   background: linear-gradient(to bottom, var(--color-purple),rgb(172, 70, 255));
-  border-radius: 50%;
+  border-radius: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +30,7 @@
 }
 
 .icon {
-  font-size: 25px;
+  font-size: 27px;
 }
 
 
@@ -37,9 +41,11 @@
   align-items: center;
   justify-content: center;
   color: white;
+  margin-left: 10px;
   z-index: 1;
   transition-duration: .3s;
-  font-size: 1.04em;
+  font-size: 1.24em;
+  font-family: var(--font-handlee);
 }
 
 .bookmarkBtn:hover .IconContainer {
