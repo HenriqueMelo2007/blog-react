@@ -20,7 +20,7 @@ export function Diario () {
           <span className="IconContainer">
             <p className='icon'>&#x1F4DD;</p>
           </span>
-          <p className="text">CRIAR</p>
+          <p className="text">{!classToggle ? 'CRIAR' : 'VOLTAR'}</p>
         </button>
       </div>
 
