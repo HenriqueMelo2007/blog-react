@@ -56,3 +56,10 @@ li:hover {
   text-decoration: none;
   color: var(--color-text);
 }
+
+.textAnotacao, .inputAnotacao {
+  color: var(--color-text);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}

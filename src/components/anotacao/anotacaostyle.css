@@ -8,13 +8,6 @@
   padding: 20px;
 }
 
-.textAnotacao, .inputAnotacao {
-  color: var(--color-text);
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
 .inputAnotacao {
   font-family: var(--font-handlee);
   font-size: 32px;
