@@ -28,10 +28,6 @@ export function Diario () {
         {anotacoes.map( item => <Anotacao key={item.id} tittle={item.tittle} text={item.text} />)}
       </div>} 
 
-      {console.log(anotacoes)}
-
-      
-
       {classToggle && <div className="divConteudo"><Painel setAnotacoes={setAnotacoes} classToggle={classToggle} setClassToggle={setClassToggle} /></div>}
 
     </div>
