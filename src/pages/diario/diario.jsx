@@ -5,7 +5,7 @@ import { Painel } from '../../components/painelcriacao/painel'
 
 export function Diario () {
 
-  const [anotacoes, setAnotacoes] = useState([{tittle: 'opa', text: 'isto é um texto graaaanndeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'}])
+  const [anotacoes, setAnotacoes] = useState([])
 
   const [classToggle, setClassToggle] = useState(false)
 
@@ -25,12 +25,14 @@ export function Diario () {
       </div>
 
       {!classToggle && <div className='divConteudo'>
-        {anotacoes.map( item => <Anotacao tittle={item.tittle} text={item.text} />)}
-      </div>}
+        {anotacoes.map( item => <Anotacao key={item.id} tittle={item.tittle} text={item.text} />)}
+      </div>} 
+
+      {console.log(anotacoes)}
 
       
 
-      {classToggle && <div className="divConteudo"><Painel/></div>}
+      {classToggle && <div className="divConteudo"><Painel setAnotacoes={setAnotacoes} /></div>}
 
     </div>
   )
