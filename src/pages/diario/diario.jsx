@@ -32,7 +32,7 @@ export function Diario () {
 
       
 
-      {classToggle && <div className="divConteudo"><Painel setAnotacoes={setAnotacoes} /></div>}
+      {classToggle && <div className="divConteudo"><Painel setAnotacoes={setAnotacoes} classToggle={classToggle} setClassToggle={setClassToggle} /></div>}
 
     </div>
   )
