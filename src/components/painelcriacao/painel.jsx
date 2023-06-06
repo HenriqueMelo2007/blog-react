@@ -21,7 +21,7 @@ export function Painel({setAnotacoes, setClassToggle, classToggle}) {
       <input value={tittle} onChange={handleInputChange} className='inputAnotacao' placeholder='Título...' type="text" />
       <textarea value={text} onChange={handleInputChange2} className='textAnotacao' placeholder='Seu dia...' cols="30" rows="12"></textarea>
 
-      <Button funcs={() => [setAnotacoes( prevAnotacoes => [{tittle: tittle, text: text, id: Date.now()}, ...prevAnotacoes]), setClassToggle(!classToggle)]} text='Criar Anotação'></Button>
+      <Button funcs={() => [setAnotacoes( prevAnotacoes => [{tittle: tittle, text: text, id: Date.now()}, ...prevAnotacoes]), setClassToggle(!classToggle)]} text='Criar Anotação'/>
 
     </div>
   )
