@@ -9,6 +9,11 @@ export function Anotacao ({ tittle, text, id, anotacoes, setAnotacoes }) {
     setAnotacoes(novasAnotacoes)
   }
 
+  function editAnotacao() {
+    const p = anotacoes.find( item => item.id == id )
+    console.log(p.text, p.tittle)
+  }
+
   return (
     <div className='boxAnotacao'>
       
@@ -19,7 +24,7 @@ export function Anotacao ({ tittle, text, id, anotacoes, setAnotacoes }) {
 
         <Button funcs={ () => deleteAnotacao()} text='Deletar' />
 
-        <Button text='Editar' /> 
+        <Button funcs={ () => editAnotacao()} text='Editar' /> 
       </div>
 
     </div>
