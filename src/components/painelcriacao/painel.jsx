@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './painelstyle.css'
 import { Button } from '../button'
 
 export function Painel({setAnotacoes, setClassToggle, classToggle}) {

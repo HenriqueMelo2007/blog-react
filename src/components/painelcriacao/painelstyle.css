@@ -1,8 +1,0 @@
-.painelContainer {
-  border: 2px solid var(--color-purple);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 10px;
-}
