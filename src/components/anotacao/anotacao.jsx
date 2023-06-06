@@ -1,7 +1,14 @@
 import { Button } from '../button'
 import './anotacaostyle.css'
 
-export function Anotacao ({ tittle, text }) {
+export function Anotacao ({ tittle, text, id, anotacoes, setAnotacoes }) {
+
+  function deleteAnotacao() {
+    const novasAnotacoes = anotacoes.filter( item => item.id !== id)
+
+    setAnotacoes(novasAnotacoes)
+  }
+
   return (
     <div className='boxAnotacao'>
       
@@ -9,8 +16,10 @@ export function Anotacao ({ tittle, text }) {
       <textarea className='textAnotacao' readOnly value={text} cols="10" rows="12"></textarea>
 
       <div className="boxButtons">
-        <Button text='Editar' />
-        <Button text='Deletar' />
+
+        <Button funcs={ () => deleteAnotacao()} text='Deletar' />
+
+        <Button text='Editar' /> 
       </div>
 
     </div>

@@ -23,7 +23,7 @@ export function Diario () {
       </div>
 
       {!classToggle && <div className='divConteudo'>
-        {anotacoes.map( item => <Anotacao key={item.id} tittle={item.tittle} text={item.text} />)}
+        {anotacoes.map( item => <Anotacao key={item.id} id={item.id} tittle={item.tittle} text={item.text} anotacoes={anotacoes} setAnotacoes={setAnotacoes} />)}
       </div>} 
 
       {classToggle && <div className="divConteudo"><Painel setAnotacoes={setAnotacoes} classToggle={classToggle} setClassToggle={setClassToggle} /></div>}
