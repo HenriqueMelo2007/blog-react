@@ -37,3 +37,9 @@ textarea::-webkit-scrollbar-thumb {
 textarea::-webkit-scrollbar-thumb:hover {
   background: rgb(70, 11, 70); /* Cor do indicador de rolagem ao passar o mouse */
 }
+
+.boxButtons {
+  margin-top: 5px;
+  display: flex;
+  gap: 10px;
+}

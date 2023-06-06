@@ -1,3 +1,4 @@
+import { Button } from '../button'
 import './anotacaostyle.css'
 
 export function Anotacao ({ tittle, text }) {
@@ -6,6 +7,11 @@ export function Anotacao ({ tittle, text }) {
       
       <input className='inputAnotacao' type="text" readOnly value={tittle}/>
       <textarea className='textAnotacao' readOnly value={text} cols="10" rows="12"></textarea>
+
+      <div className="boxButtons">
+        <Button text='Editar' />
+        <Button text='Deletar' />
+      </div>
 
     </div>
 
