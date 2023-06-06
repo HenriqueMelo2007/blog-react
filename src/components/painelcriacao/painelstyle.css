@@ -6,19 +6,3 @@
   width: 100%;
   padding: 10px;
 }
-
-.btnPainel {
-  width: 180px;
-  height: 60px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 20px;
-  background-color: var(--color-purple);
-  color: var(--color-text);
-  font-family: var(--font-handlee);
-  font-size: 20px;
-}
-
-.btnPainel:hover {
-  cursor: pointer;
-}

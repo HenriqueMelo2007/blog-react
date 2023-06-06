@@ -10,8 +10,6 @@ export function Diario () {
   const [classToggle, setClassToggle] = useState(false)
 
 
-
-
   return (
     <div className='containerDiario'>
 
