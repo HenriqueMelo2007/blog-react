@@ -27,6 +27,14 @@ export function Anotacao ({ tittle, text, id, anotacoes, setAnotacoes }) {
     setEdit(!edit)
   }
 
+  function editArray() {
+    const object = anotacoes.find( item => item.id == id)
+    const indexObject = anotacoes.indexOf(object)
+
+    anotacoes[indexObject].tittle = tittleAnotacao
+    anotacoes[indexObject].text = textAnotacao
+  }
+
   return (
     <div className='boxAnotacao'>
 
@@ -41,7 +49,8 @@ export function Anotacao ({ tittle, text, id, anotacoes, setAnotacoes }) {
 
         <Button funcs={ () => deleteAnotacao()} text='Deletar' />
 
-        <Button funcs={ () => editAnotacao()} text={!edit ? 'Editar' : 'Concluído'} /> 
+        {!edit ? <Button funcs={ () => editAnotacao()} text='Editar' /> : <Button funcs={ () => [editAnotacao(), editArray()]} text='Concluído' />}
+     
       </div>
 
     </div>
