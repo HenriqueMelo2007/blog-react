@@ -7,10 +7,10 @@ This application simulates a personal blog with the functionality to create, edi
 To clone the project repository and run it on your local machine, follow the instructions below:
 
 1. Clone the repository using the command `git clone <repository URL>`.
-2. Navigate to the project directory: `cd resultado-loterias`.
+2. Navigate to the project directory: `cd blog-react`.
 3. Install the dependencies using the command `npm install`.
 4. Run the application using the command `npm run dev`.
-5. Access the application in your browser at `http://localhost:3000`.
+5. Access the application in your browser at localhost.
 
 Make sure you have Vite installed globally on your machine before proceeding.
 
